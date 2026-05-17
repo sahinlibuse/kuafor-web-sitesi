@@ -1,0 +1,128 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.8;
+}
+
+/* Üst Menü */
+.ust-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu-linkler {
+    list-style: none;
+    display: flex;
+}
+
+.menu-linkler li {
+    margin-left: 25px;
+}
+
+.menu-linkler a {
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+}
+
+.aktif {
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
+
+/* Hakkımızda Düzeni */
+.hakkimizda-bolumu {
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.kapsayici {
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Sol Taraftaki Resim */
+.hakkimizda-resim {
+    flex: 1;
+}
+
+.hakkimizda-resim img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 0px #d4af37; /* Dekoratif altın çerçeve gölgesi */
+}
+
+/* Sağ Taraftaki Yazılar */
+.hakkimizda-yazi {
+    flex: 1;
+}
+
+.hakkimizda-yazi span {
+    color: #d4af37;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hakkimizda-yazi h2 {
+    font-size: 36px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hakkimizda-yazi p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Rakamlarla Özellikler */
+.ozellikler {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.ozellik {
+    background-color: #111;
+    padding: 15px 25px;
+    border: 1px solid #222;
+    font-size: 14px;
+}
+
+.ozellik strong {
+    display: block;
+    font-size: 24px;
+    color: #d4af37;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .kapsayici {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ozellikler {
+        justify-content: center;
+    }
+}
